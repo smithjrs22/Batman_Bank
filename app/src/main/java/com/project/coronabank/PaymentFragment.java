@@ -220,7 +220,7 @@ public class PaymentFragment extends Fragment {
                 json = gson.toJson(userProfile);
                 prefsEditor.putString("LastProfileUsed", json).apply();
 
-                Toast.makeText(getActivity(), "Payment of ZAR" + String.format(Locale.getDefault(), "%.2f", paymentAmount) + " successfully made", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "Payment of USD" + String.format(Locale.getDefault(), "%.2f", paymentAmount) + " successfully made", Toast.LENGTH_SHORT).show();
                 edtPaymentAmount.getText().clear();
             }
         } else {
