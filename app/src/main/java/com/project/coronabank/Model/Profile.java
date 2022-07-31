@@ -2,9 +2,7 @@ package com.project.coronabank.Model;
 
 import java.util.ArrayList;
 
-/**
- * Created by Melvin Kisten 201700476
- */
+
 public class Profile {
 
     private String firstName;

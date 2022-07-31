@@ -90,7 +90,7 @@ public class Account {
     }
 
     public String toString() {
-        return (accountName + " (USD" + String.format(Locale.getDefault(), "%.2f", accountBalance) + ")");
+        return (accountName + " ($" + String.format(Locale.getDefault(), "%.2f", accountBalance) + ")");
     }
 
     public String toTransactionString() {

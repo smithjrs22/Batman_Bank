@@ -1,8 +1,6 @@
 package com.project.coronabank.Model;
 
-/**
- * Created by Melvin Kisten 201700476
- */
+
 
 public class Payee {
 
