@@ -52,7 +52,7 @@ public class TransactionAdapter extends ArrayAdapter<Transaction> {
         txtTransactionAmount.setText("Amount: $" + String.format("%.2f", transaction.getAmount()));
     //below sets the font color for the transactions list of deposits and transfers
         if (transaction.getTransactionType() == Transaction.TRANSACTION_TYPE.PAYMENT) {
-            imgTransactionIcon.setImageResource(R.mipmap.icon_deposit);
+            imgTransactionIcon.setImageResource(R.mipmap.icon_deposit_background);
             txtTransactionInfo.setText("To Payee: " + transaction.getPayee());
             txtTransactionAmount.setTextColor(Color.BLACK);
         } else if (transaction.getTransactionType() == Transaction.TRANSACTION_TYPE.TRANSFER) {
