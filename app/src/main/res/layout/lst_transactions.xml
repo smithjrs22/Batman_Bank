@@ -51,7 +51,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:textAppearance="@android:style/TextAppearance.Holo.Small"
-        android:textColor="@android:color/holo_red_light"
+        android:textColor="@color/accountBalanceFont"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/img_transaction"
         app:layout_constraintTop_toBottomOf="@+id/txt_transaction_info"

@@ -54,15 +54,15 @@ public class TransactionAdapter extends ArrayAdapter<Transaction> {
         if (transaction.getTransactionType() == Transaction.TRANSACTION_TYPE.PAYMENT) {
             imgTransactionIcon.setImageResource(R.drawable.lst_payment_icon);
             txtTransactionInfo.setText("To Payee: " + transaction.getPayee());
-            txtTransactionAmount.setTextColor(Color.RED);
+            txtTransactionAmount.setTextColor(Color.BLACK);
         } else if (transaction.getTransactionType() == Transaction.TRANSACTION_TYPE.TRANSFER) {
             imgTransactionIcon.setImageResource(R.drawable.icon_transfer_24);
             txtTransactionInfo.setText("From: " + transaction.getSendingAccount() + " - " + "To: " + transaction.getDestinationAccount());
-            txtTransactionAmount.setTextColor(getContext().getResources().getColor(android.R.color.holo_blue_light));
+            txtTransactionAmount.setTextColor(getContext().getResources().getColor(android.R.color.black));
         } else if (transaction.getTransactionType() == Transaction.TRANSACTION_TYPE.DEPOSIT) {
             imgTransactionIcon.setImageResource(R.drawable.lst_deposit_icon);
             txtTransactionInfo.setVisibility(View.GONE);
-            txtTransactionAmount.setTextColor(getContext().getResources().getColor(android.R.color.holo_green_dark));
+            txtTransactionAmount.setTextColor(getContext().getResources().getColor(android.R.color.black));
         }
 
         return convertView;
