@@ -47,5 +47,5 @@
         android:contentDescription="Account Image"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/lst_account_icon" />
+        app:srcCompat="@mipmap/icon_deposit" />
 </android.support.constraint.ConstraintLayout>

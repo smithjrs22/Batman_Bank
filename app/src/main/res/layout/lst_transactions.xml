@@ -14,7 +14,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/lst_deposit_icon" />
+        app:srcCompat="@mipmap/icon_deposit" />
 
     <TextView
         android:id="@+id/txt_transaction_type_id"

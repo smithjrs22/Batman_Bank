@@ -50,9 +50,9 @@ public class TransactionAdapter extends ArrayAdapter<Transaction> {
         txtTransactionTitle.setText(transaction.getTransactionType().toString() + " - " + transaction.getTransactionID());
         txtTransactionTimestamp.setText(transaction.getTimestamp());
         txtTransactionAmount.setText("Amount: $" + String.format("%.2f", transaction.getAmount()));
-
+    //below sets the font color for the transactions list of deposits and transfers
         if (transaction.getTransactionType() == Transaction.TRANSACTION_TYPE.PAYMENT) {
-            imgTransactionIcon.setImageResource(R.drawable.lst_payment_icon);
+            imgTransactionIcon.setImageResource(R.mipmap.icon_deposit);
             txtTransactionInfo.setText("To Payee: " + transaction.getPayee());
             txtTransactionAmount.setTextColor(Color.BLACK);
         } else if (transaction.getTransactionType() == Transaction.TRANSACTION_TYPE.TRANSFER) {
@@ -60,7 +60,6 @@ public class TransactionAdapter extends ArrayAdapter<Transaction> {
             txtTransactionInfo.setText("From: " + transaction.getSendingAccount() + " - " + "To: " + transaction.getDestinationAccount());
             txtTransactionAmount.setTextColor(getContext().getResources().getColor(android.R.color.black));
         } else if (transaction.getTransactionType() == Transaction.TRANSACTION_TYPE.DEPOSIT) {
-            imgTransactionIcon.setImageResource(R.drawable.lst_deposit_icon);
             txtTransactionInfo.setVisibility(View.GONE);
             txtTransactionAmount.setTextColor(getContext().getResources().getColor(android.R.color.black));
         }
