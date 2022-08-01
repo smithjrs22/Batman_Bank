@@ -11,7 +11,7 @@
             android:title="Dashboard" />
         <item
             android:id="@+id/nav_accounts"
-            android:icon="@drawable/icon_accounts_24"
+            android:icon="@mipmap/icon_account_background"
             android:title="Accounts" />
 
         <item android:title="Transaction">
