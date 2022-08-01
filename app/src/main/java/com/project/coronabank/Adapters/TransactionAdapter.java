@@ -56,7 +56,7 @@ public class TransactionAdapter extends ArrayAdapter<Transaction> {
             txtTransactionInfo.setText("To Payee: " + transaction.getPayee());
             txtTransactionAmount.setTextColor(Color.RED);
         } else if (transaction.getTransactionType() == Transaction.TRANSACTION_TYPE.TRANSFER) {
-            imgTransactionIcon.setImageResource(R.drawable.lst_transfer_icon);
+            imgTransactionIcon.setImageResource(R.drawable.icon_transfer_24);
             txtTransactionInfo.setText("From: " + transaction.getSendingAccount() + " - " + "To: " + transaction.getDestinationAccount());
             txtTransactionAmount.setTextColor(getContext().getResources().getColor(android.R.color.holo_blue_light));
         } else if (transaction.getTransactionType() == Transaction.TRANSACTION_TYPE.DEPOSIT) {
