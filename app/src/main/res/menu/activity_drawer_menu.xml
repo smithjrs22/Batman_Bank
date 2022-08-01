@@ -23,7 +23,7 @@
                         android:title="Make a Deposit" />
                     <item
                         android:id="@+id/nav_transfer"
-                        android:icon="@drawable/icon_transfer_24"
+                        android:icon="@mipmap/icon_transfer_foreground"
                         android:title="Make a Transfer" />
                     <item
                         android:id="@+id/nav_payment"
