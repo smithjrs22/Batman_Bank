@@ -89,7 +89,7 @@ public class DashboardFragment extends Fragment {
 
         if (timeOfDay >= 5 && timeOfDay < 12) {
             welcomeString.append(getString(R.string.good_morning));
-            imgTime.setImageResource(R.drawable.morning_icon_96);
+            imgTime.setImageResource(R.mipmap.icon_morning_foreground);
         } else if (timeOfDay >= 12 && timeOfDay < 17) {
             welcomeString.append(getString(R.string.good_afternoon));
             imgTime.setImageResource(R.drawable.day_icon_96);
