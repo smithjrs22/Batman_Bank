@@ -13,9 +13,7 @@ import com.project.coronabank.Model.Transaction;
 
 import java.util.ArrayList;
 
-/**
- * Created by Melvin Kisten 201700476
- */
+
 
 public class ApplicationDB {
 

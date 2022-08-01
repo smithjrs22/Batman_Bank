@@ -5,4 +5,5 @@
     <color name="colorAccent">#44496f</color>
     <color name="drawerHeader">#717171</color>
     <color name="drawerMenu">#f1b950</color>
+    <color name="backgroundColorScheme">#f1b950</color>
 </resources>
