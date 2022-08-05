@@ -73,12 +73,18 @@ public class CreateProfileFragment extends Fragment {
             }
         }
 
+
         if (edtFirstName.getText().toString().equals("") || edtLastName.getText().toString().equals("") || edtCountry.getText().toString().equals("") ||
                 edtUsername.getText().toString().equals("") || edtPassword.getText().toString().equals("") || edtPasswordConfirm.getText().toString().equals("")) {
             Toast.makeText(getActivity(), R.string.fields_blank, Toast.LENGTH_SHORT).show();
-        } else if (!(edtPassword.getText().toString().equals(edtPasswordConfirm.getText().toString()))) {
-            Toast.makeText(getActivity(), R.string.password_mismatch, Toast.LENGTH_SHORT).show();
-        } else if (usernameTaken) {
+        } else if (!(edtPassword.getText().toString().equals(edtPasswordConfirm.getText().toString())))
+        {Toast.makeText(getActivity(), R.string.password_mismatch, Toast.LENGTH_SHORT).show();
+        } //add more for password//
+        else if(edtPassword.getText().toString().length() < 7 ){
+            Toast.makeText(getActivity(), "Password is not long enough it must be at least 7 characters" , Toast.LENGTH_SHORT).show();
+        }
+
+        else if (usernameTaken) {
             Toast.makeText(getActivity(), "A User has already taken that username", Toast.LENGTH_SHORT).show();
         } else {
             Profile userProfile = new Profile(edtFirstName.getText().toString(), edtLastName.getText().toString(), edtCountry.getText().toString(),
