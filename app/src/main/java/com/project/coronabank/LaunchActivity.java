@@ -83,7 +83,7 @@ public class LaunchActivity extends AppCompatActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
         builder.setTitle("Help")
-                .setMessage("Help");
+                .setMessage("In order to get help you must first solve a riddle. Just kidding! If you need help turn on the bat signal light or call 911.");
 
         AlertDialog dialog = builder.create();
         dialog.show();
