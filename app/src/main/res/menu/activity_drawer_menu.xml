@@ -19,7 +19,7 @@
                 <group android:checkableBehavior="single">
                     <item
                         android:id="@+id/nav_deposit"
-                        android:icon="@mipmap/icon_depositdrawer_background"
+                        android:icon="@mipmap/icon_deposittransactionlist_foreground"
                         android:title="Make a Deposit" />
                     <item
                         android:id="@+id/nav_transfer"
