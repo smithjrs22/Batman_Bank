@@ -58,4 +58,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@mipmap/icon_batman_foreground"
+        android:layout_width="91dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="564dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="91dp"
+        android:src="@mipmap/icon_batman_foreground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
